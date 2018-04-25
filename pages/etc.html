@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hello.</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+		<!-- Compiled and minified CSS -->
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+		<!-- Compiled and minified JavaScript -->
+		<script src="jquery-2.1.4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+          	<script src="http://rcodonnell.github.io/code4hr-voting/src/js/typed.js"></script>
+		 <script src="js/main.min.js" defer></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Shade|Inconsolata" rel="stylesheet">
+
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<!-- Get jQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/typed.js" type="text/javascript"></script>
+
+		<script>
+		$(function(){
+			$("#typed").typed({
+				stringsElement: $('#typed-strings'),
+				typeSpeed: 50,
+				backDelay: 2000,
+				loop: true,
+				contentType: 'html', // or text
+				// defaults to false for infinite loop
+				loopCount: false,
+				callback: function(){ foo(); },
+				resetCallback: function() { newTyped(); }
+			});
+			$(".reset").click(function(){
+				$("#typed").typed('reset');
+			});
+		});
+		function newTyped(){ /* A new typed object */ }
+		function foo(){ console.log("Callback"); }
+		</script>
+	</head>
+
+	<body>
+	<main>
+		<div class="row 1">
+			<div class="title">
+				<h1> <a href="http://nishatanjum.com" style= "color: black;"> Nishat Anjum  </a> </h1>
+			</div>
+		</div>
+
+		<div class="row 2">
+		</div>
+		<div class="row 3">
+		</div>
+
+		<div class="row 4">
+			<div class="col s2" id="socialLinks">
+				<ul>
+					<li> <a href="https://github.com/nailainbits" target="_blank"> <i class="fa fa-github-alt fa-3x" aria-hidden="true" style="color: #8c9eff;"></i> </a> </li>
+					<li> <a href="https://www.linkedin.com/in/nishatanjum" target="_blank"> <i class="fa fa-linkedin fa-3x" aria-hidden="true" style="color: #8c9eff;"></i> </a> </li>
+					<li> <a href="https://twitter.com/thathijabae" target="_blank"> <i class="fa fa-twitter fa-3x" aria-hidden="true" style="color: #8c9eff;"></i> </a> </li>
+					<li> <a href="https://www.instagram.com/thathijabae/" target="_blank"> <i class="fa fa-instagram fa-3x" aria-hidden="true" style="color: #8c9eff;"></i> </a> </li>
+					<li> <a href="mailto:nishatnanjum@gmail.com?Subject=Hello" target="_top"> <i class="fa fa-envelope-o fa-3x" aria-hidden="true" style="color: #8c9eff;"></i> </a> </li>
+				</ul>
+			</div>
+
+			<div class="col s4">
+				<img src="images/profile.png" class="circle responsive-img">
+			</div>
+
+			<div class="col s3">
+				<div class="item aboutLink">
+					<h2> <i class="fa fa-code" aria-hidden="true"></i> About</h2>
+				</div>
+			</div>
+
+			<div class="col s5">
+				<div class="col s9">
+				<span class="aboutB">
+					<h1 class="aboutBody"> Hi there! My name is Nishat, but some parts of the internet may know me as Naila. I'm a computer science student, as well as a </h1>
+				        <div class="type-wrap">
+						<div id="typed-strings">
+							<span><strong>Creater</strong></span>
+							<span><strong>Tinkerer</strong></span>
+							<span><strong>Programmer</strong></span>
+							<span><strong>Designer</strong></span>
+							<span><strong>Hacker</strong></span>
+							<span><strong>Innovator</strong></span>
+						       <p></p>
+						</div>
+						<span id="typed" style="white-space:pre;"></span>
+				        </div>
+				        <a href="https://drive.google.com/file/d/0B1zCeuINBt_dYlU1QXdCSVozeVk/view?usp=sharing" target="_blank" class="waves-effect waves-light btn-large  indigo accent-1" style="top: 10px; left: 124px; font-family: 'Inconsolata', monospace;">My Resume</a>
+				</span>
+				</div>
+			</div>
+
+			<div class="col s1">
+				<div class="item blogLink">
+					<h2> <a href="https://nailainbits.github.io/blog/" style= "color: #ffeb3b;" target="_blank">Blog </a> </h2>
+				</div>
+			</div>
+		</div>
+		<div class="row 5">
+		</div>
+		<div class="row 6">
+		</div>
+		<div class="row 7">
+		</div>
+		<div class="row 8">
+		</div>
+
+		<div class="row 9">
+			<div class="col s12">
+				<div class="aboutLink">
+					<h1 style="text-align: center;" > <i class="fa fa-code-fork" aria-hidden="true"></i> Current Projects</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="row 10">
+			<div class="col s4 grid">
+			<div class="card">
+				<figure class="overlay">
+				<div class="card-image">
+					<img src="images/dayday.png">
+				</div>
+					<figcaption>
+						<p class="description">Day Day is an interactive mobile app which allows Korean pop culture fans to chat, purchase merchandise, and attend local meetups. <br> <br>
+						<a class="waves-effect waves-light btn deep-purple lighten-4" href="http://daydayapp.io/">Website</a>
+						<br> <br>
+						<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://itunes.apple.com/us/app/dayday-app/id1221042827?mt=8">Get the app</a>
+						<br> <br>
+						<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/NailaInBits/DayDay">Git repo</a>
+						</p>
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+
+			<div class="col s4 grid">
+			<div class="card">
+				<figure class="overlay">
+				<div class="card-image">
+					<img src="images/weplay.png">
+				</div>
+					<figcaption>
+						<p class="description">WePlay is a location based social media app dedicated to nurturing more human connections in the digital age. <br> <br>
+
+						<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/NailaInBits/WePlay">Git Repo</a> <br> <br>
+
+						<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://nailainbits.github.io/WePlayWebsite/">Website</a>
+						</p>
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+
+			<div class="col s4 grid">
+			<div class="card">
+				<figure class="overlay">
+				<div class="card-image">
+					<img src="images/locus.png">
+				</div>
+					<figcaption>
+						<p class="description">Locus is an iOS app that will allow users to chronologize places they've travelled to. <br> <br>
+
+						<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/cunytech/locus">Git Repo</a></p>
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+
+			<div class="col s4 grid">
+			<div class="card">
+				<figure class="overlay">
+				<div class="card-image">
+					<img src="images/cunybuzz.png">
+				</div>
+					<figcaption>
+						<p class="description">CUNY Buzz is a Facebook messenger bot that allows you to search for registered campus specific events [Currently only Brooklyn College].  <br> <br>
+
+						<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/nishata/CUNYBuzzBot">Git Repo</a> <br> <br>
+ 						<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://www.facebook.com/CUNYBuzz">Facebook Page</a> <br> <br>
+						<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://bot.api.ai/a30eae9f-eee3-4c51-8d5d-8e8b6e5bea78">Try It!</a>
+						</p>
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+
+			<div class="col s4 grid">
+			<div class="card">
+				<figure class="overlay">
+				<div class="card-image">
+					<img src="images/techevents.png">
+				</div>
+					<figcaption>
+						<p class="description">Tech Events is an Alexa skill that allows you to search through meetup.com and find tech related events in your area. <br> <br>
+
+						<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/nishata/TechEventAlexaSkill">Git Repo</a></p>
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+
+			<div class="col s4 grid">
+			<div class="card">
+				<figure class="overlay">
+				<div class="card-image">
+					<img src="images/femfeed.png">
+				</div>
+					<figcaption>
+						<p class="description">An all female platform for programmers that provides actionable, specific, and kind code feedback as well as the option to connect female programmers with others in their area.
+							<br> <br>
+						<a class="waves-effect waves-light btn deep-purple lighten-4" href="http://fem-feed.com/">Website</a></p>
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+		</div>
+
+		<div class="row 11">
+			<div class="col s12">
+				<div class="aboutLink">
+					<h1 style="text-align: center;" > <i class="fa fa-code-bolt" aria-hidden="true"></i> ETC ft. Me</h1>
+				</div>
+			</div>
+		</div>
+
+		<!-- Row 12 utilizes pieces of code from Pham Mikun (@mikun) -->
+		<div class = "row 12" style="height: 70vh">
+			<div class="col s12">
+				<div class="slider__warpper">
+
+					<div class="flex__container flex--green flex--active" data-slide="1">
+						<div class="flex__item flex__item--left">
+							<div class="flex__content">
+								<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://twitter.com/thathijabae">Follow Along On <i class="fa fa-twitter"></i></a>
+								<p class="text--sub">Fall 2017 Internship</p>
+								<h1 class="text--big">Twitter</h1>
+								<p class="text--normal">This fall I'll be interning @Twitter on the distributions and routing team under platform engineering.</p>
+							</div>
+							<p class="text__background">Engineering</p>
+						</div>
+						<div class="flex__item flex__item--right"></div>
+						<img class="etc_img" src="images/twitter.jpg" />
+					</div>
+
+					<div class="flex__container flex--gray animate--start" data-slide="2">
+						<div class="flex__item flex__item--left">
+							<div class="flex__content">
+								<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://docs.google.com/presentation/d/1rKUMWVFqeyx9FgwzsEI4ZvAnHsHeVrrFbDPmiXHmn0s/edit">Pitch Deck</a>
+								<p class="text--sub">CUNY Startups Accelerator</p>
+								<h1 class="text--big">DayDay</h1>
+								<p class="text--normal">Our startup pitch. After graduating from the accelerator we were awarded another investment.</p>
+							</div>
+							<p class="text__background">DayDay</p>
+						</div>
+						<div class="flex__item flex__item--right"></div>
+						<iframe class="etc_img" width="560" height="315" style="margin-top: 110px" 
+							src="https://www.youtube.com/embed/8A0U96kTRPM" frameborder="0" allowfullscreen>
+						</iframe>
+					</div>
+
+					<div class="flex__container flex--yellow animate--start" data-slide="3">
+						<div class="flex__item flex__item--left">
+							<div class="flex__content">
+								<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://twitter.com/i/moments/805565422607204352">Twitter Moment</a>
+								<p class="text--sub">Organized a Women in Tech Conference</p>
+								<h1 class="text--big">BWBT</h1>
+								<p class="text--normal">As Vice President of the WiCS club on my campus, I helped put together the Bold Women Bold Tech conference in celebration of women's history month.</p>
+							</div>
+							<p class="text__background">BWBT</p>
+						</div>
+						<div class="flex__item flex__item--right"></div>
+						<img class="etc_img" src="images/BWBT.png" />
+					</div>
+
+					<div class="flex__container flex--blue animate--start" data-slide="4">
+						<div class="flex__item flex__item--left">
+							<div class="flex__content">
+								<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/NailaInBits/WePlay">Git Repo</a>
+								<p class="text--sub">National Semi-Finalist Microsft Imagine Cup 2017</p>
+								<h1 class="text--big">WePlay</h1>
+								<p class="text--normal">Our app [WePlay] became a National Semi-Finalist in the Microsft Imagine Cup 2017.</p>
+							</div>
+							<p class="text__background">WePlay</p>
+						</div>
+						<div class="flex__item flex__item--right"></div>
+						<img class="etc_img" src="images/imagineCup.png" />
+					</div>
+
+					<div class="flex__container flex--green animate--start" data-slide="5">
+						<div class="flex__item flex__item--left">
+							<div class="flex__content">
+								<a class="waves-effect waves-light btn deep-purple lighten-4" href="http://daydayapp.io/">Website</a>
+								<p class="text--sub">CUNY Startups Accelerator</p>
+								<h1 class="text--big">Accelerator</h1>
+								<p class="text--normal">My startup was awarded a prototyping grant and we were accepted into the CUNY Startups Accelerator.</p>
+							</div>
+							<p class="text__background">Accelerator</p>
+						</div>
+						<div class="flex__item flex__item--right"></div>
+						<img class="etc_img" src="images/cunyStartup.png" />
+					</div>
+
+					<div class="flex__container flex--periwinkle animate--start" data-slide="6">
+					<div class="flex__item flex__item--left">
+						<div class="flex__content">
+							<p class="text--sub">Tech Inclusion</p>
+							<h1 class="text--big">Clarifai</h1>
+							<p class="text--normal">I got featured on Clarifai's instagram for my thoughts on diversity and tech inclusion.</p>
+						</div>
+						<p class="text__background">Clarifai</p>
+					</div>
+					<div class="flex__item flex__item--right"></div>
+						<img class="etc_img" src="images/clarifai.jpg" />
+					</div>
+					
+					<div class="flex__container flex--pink animate--start" data-slide="7">
+						<div class="flex__item flex__item--left">
+							<div class="flex__content">
+								<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://technical.ly/baltimore/2016/11/07/technica-female-hackathon-projects/?utm_content=bufferede18&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer">Article Link</a>
+								<p class="text--sub">Femfeed: An empathy based code review site.</p>
+								<h1 class="text--big">Technica</h1>
+								<p class="text--normal">My team and I were featured in Technical.ly for our project at Technica.</p>
+							</div>
+							<p class="text__background">Technica</p>
+						</div>
+						<div class="flex__item flex__item--right"></div>
+						<img class="etc_img" src="images/technica.jpg" />
+					</div>
+				
+					<div class="flex__container flex--red animate--start" data-slide="8">
+					<div class="flex__item flex__item--left">
+						<div class="flex__content">
+							<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/nishata/CUNYBuzzBot">Git Repo</a>
+							<p class="text--sub">CUNY Hackathon: A Messenger Bot</p>
+							<h1 class="text--big">Messenger Bot</h1>
+							<p class="text--normal">My teammate and I presenting our messenger bot at the CUNY Hackathon 2016.</p>
+						</div>
+						<p class="text__background">Bot</p>
+					</div>
+					<div class="flex__item flex__item--right"></div>
+						<img class="etc_img" src="images/cunyHack.png" />
+					</div>
+				</div>
+
+				<div class="slider__navi">
+					<a href="#" class="slide-nav active" data-slide="1">green</a>
+					<a href="#" class="slide-nav" data-slide="2">gray</a>
+					<a href="#" class="slide-nav" data-slide="3">yellow</a>
+					<a href="#" class="slide-nav" data-slide="4">blue</a>
+					<a href="#" class="slide-nav" data-slide="5">green</a>
+					<a href="#" class="slide-nav" data-slide="6">periwinkle</a>
+					<a href="#" class="slide-nav" data-slide="7">pink</a>
+					<a href="#" class="slide-nav" data-slide="8">red</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row 13">
+			<div class="col s12">
+				<div class="aboutLink">
+					<h1 style="text-align: center;" > <i class="fa fa-code-bolt" aria-hidden="true"></i>My Past Lives</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="row 14">
+			<div class="col s4 grid">
+			
+		</div>
+
+		<script type="text/javascript">
+			$(".slide-nav").on("click", function(e) {
+				e.preventDefault();
+				// get current slide
+				var current = $(".flex--active").data("slide"),
+				// get button data-slide
+				next = $(this).data("slide");
+
+				$(".slide-nav").removeClass("active");
+				$(this).addClass("active");
+
+				if (current === next) {
+					return false;
+				} else {
+					$(".slider__warpper")
+					.find(".flex__container[data-slide=" + next + "]")
+					.addClass("flex--preStart");
+				    $(".flex--active").addClass("animate--end");
+					setTimeout(function() {
+						$(".flex--preStart")
+						.removeClass("animate--start flex--preStart")
+						.addClass("flex--active");
+						$(".animate--end")
+						.addClass("animate--start")
+						.removeClass("animate--end flex--active");
+					}, 800);
+				}
+			});
+		</script>
+		</main>
+	</body>
+
+	<footer class="page-footer  blue lighten-4">
+		<div style="text-align: center;">
+			© 2017 Naila
+		</div>
+	</footer>
+	
+</html>
