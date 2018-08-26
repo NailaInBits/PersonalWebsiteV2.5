@@ -12,8 +12,9 @@ main {
 #leftSide {
     background: black;
     max-width: 50%;
-    min-height: 100vh;
+    height: 100vh;
     float: left;
+    overflow: auto;
 }
 
 #topLinks h2 {
@@ -66,11 +67,9 @@ main {
     font-family: 'Bungee Shade', cursive;
     text-align: center;
     font-weight: normal;
-    font-size: 7rem;
+    font-size: 3.5rem;
     color: #F5ECCF;
     text-shadow: 0px 0px #EB4A2C, -1px 1px #EB4A2C, -2px 2px #EB4A2C, -3px 3px #EB4A2C, -4px 4px #EB4A2C, -5px 5px #EB4A2C, -6px 6px #EB4A2C, -7px 7px #EB4A2C, -8px 8px #EB4A2C, -9px 9px #EB4A2C, -10px 10px #EB4A2C, -11px 11px #EB4A2C, -12px 12px #EB4A2C, -13px 13px #EB4A2C, -14px 14px #EB4A2C, -15px 15px #EB4A2C, -16px 16px #EB4A2C, -17px 17px #EB4A2C, -18px 18px #EB4A2C, -19px 19px #EB4A2C, -20px 20px #EB4A2C, -21px 21px #EB4A2C, -22px 22px #EB4A2C, -23px 23px #EB4A2C, -24px 24px #EB4A2C, -25px 25px #EB4A2C, -26px 26px #EB4A2C, -27px 27px #EB4A2C, -28px 28px #EB4A2C, -29px 29px #EB4A2C, -30px 30px #EB4A2C, -31px 31px #EB4A2C, -32px 32px #EB4A2C, -33px 33px #EB4A2C, -34px 34px #EB4A2C, -35px 35px #EB4A2C, -36px 36px #EB4A2C, -37px 37px #EB4A2C, -38px 38px #EB4A2C, -39px 39px #EB4A2C, -40px 40px #EB4A2C, -41px 41px #EB4A2C, -42px 42px #EB4A2C, -43px 43px #EB4A2C, -44px 44px #EB4A2C, -45px 45px #EB4A2C, -46px 46px #EB4A2C, -47px 47px #EB4A2C, -48px 48px #EB4A2C, -49px 49px #EB4A2C, -50px 50px #EB4A2C;
-  -webkit-animation: color 2s ease-in infinite;
-          animation: color 2s ease-in infinite;
 }
 
 #aboutSection {
@@ -105,7 +104,7 @@ main {
     background-color: #caff2b;
 }
 
-.aboutBody {
+#aboutBody {
 	font-family: 'Inconsolata', monospace;
 	font-size: large;
 	text-align: center;
@@ -147,6 +146,34 @@ main {
 	.grid {
 		display: inline;
 	}
+
+    #projectsGrid {
+        display:inline-block;
+        float: none;
+        max-width: 100%;
+        overflow: none;
+    }
+    #etcGrid {
+        margin-top: 300vh;
+        display: inline-block;
+        width: 100%;
+        overflow: visible;
+        float: none;
+    }
+
+    #leftSide {
+        max-width: 100%;
+        max-height: 100%;
+        display: inline-block;
+        overflow: visible;
+    }
+
+    #talksGrid {
+        min-width: 100%;
+        min-height: 100%;
+        display: inline-block;
+        overflow: visible;
+    }
 }
 
 .grid figure {
@@ -158,10 +185,47 @@ main {
 	cursor: pointer;
 }
 
+@media only screen and (max-width: 1400px) {
+    #title {
+        font-size: 3rem;
+    }
+}
+
 @media only screen and (max-width: 900px) {
 	.grid figure{
 		min-width: 20px;
 	}
+
+    #title {
+         font-size: 2rem;
+    }
+
+    #projectsGrid {
+        display:inline-block;
+        max-width: 100%;
+        overflow: none;
+    }
+
+    #etcGrid {
+        display:inline-block;
+        width: 100%;
+        overflow: visible;
+    }
+
+    #leftSide {
+        max-width: 100%;
+        max-height: 100%;
+        display: inline-block;
+        overflow: visible;
+    }
+
+    #talksGrid {
+        max-width: 100%;
+        max-height: 100%;
+        display: inline-block;
+        overflow: visible;
+        float: none;
+    }
 }
 
 .grid figure img {
@@ -715,7 +779,7 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 #talksGrid {
     background: #1A0061;
     width: 50%;
-    height: 100vh;
+    height: 100%;
     float: right;
     display: none;
     margin-bottom: 0;
