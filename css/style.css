@@ -1,6 +1,6 @@
 body {
-     display: flex;
-     background-color:black;
+    display: flex;
+    background-color:black;
  }
 
 main {
@@ -9,6 +9,7 @@ main {
     height: 100%;
 }
 
+/* Left Side of screen */
 #leftSide {
     background: black;
     max-width: 50%;
@@ -26,42 +27,41 @@ main {
     color: #3500D4;
 }
 #topLinks h2 {
-  position: relative;
-  display: block;
-  cursor: pointer;
+    position: relative;
+    display: block;
+    cursor: pointer;
 }
 
 #topLinks h2:before, #topLinks h2:after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 4px;
-  top: 50%;
-  margin-top: -0.5px;
-  background: #caff2b;
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #caff2b;
 }
 
 #topLinks h2:before {
-  left: -2.5px;
+    left: -2.5px;
 }
 #topLinks h2:after {
-  right: 2.5px;
-  background: #caff2b;
-  transition: width 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+    right: 2.5px;
+    background: #caff2b;
+    transition: width 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 #topLinks h2:hover:before {
-  background: #caff2b;
-  width: 100%;
-  transition: width 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+    background: #caff2b;
+    width: 100%;
+    transition: width 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 #topLinks h2:hover:after {
-  background: transparent;
-  width: 100%;
-  transition: 0s;
+    background: transparent;
+    width: 100%;
+    transition: 0s;
 }
-
 
 #title {
     font-family: 'Bungee Shade', cursive;
@@ -128,11 +128,11 @@ main {
 }
 
 .projectContent {
-  padding: 2%;
+    padding: 2%;
 }
 
 .row .col.s4 {
-  padding: 0;
+    padding: 0;
 }
 
 .grid {
@@ -142,55 +142,6 @@ main {
 	text-align: center;
 }
 
-@media only screen and (max-width: 479px) {
-	.grid {
-		display: inline;
-	}
-    #projectsGrid {
-        display:inline-block;
-        float: none;
-        max-width: 100%;
-        overflow: visible;
-    }
-    #etcGrid {
-        display: inline-block;
-        min-width: 100%;
-        overflow: visible;
-        float: none;
-    }
-
-    #leftSide {
-        max-width: 100%;
-        max-height: 100%;
-        display: inline-block;
-        overflow: visible;
-    }
-
-    #talksGrid {
-        min-width: 100%;
-        min-height: 100%;
-        display: inline-block;
-        overflow: visible;
-    }
-
-    #etcTitle {
-        left: 0vh;
-        margin-bottom: 2vh;
-    }
-
-    .flex__content {
-        padding: 10%;
-    }
-
-    .etc_img {
-
-    }
-
-     .slider__navi {
-         top: 170%;
-     }
-}
-
 .grid figure {
 	position: relative;
 	float: left;
@@ -198,49 +149,6 @@ main {
 	width: 100%;
 	text-align: center;
 	cursor: pointer;
-}
-
-@media only screen and (max-width: 1400px) {
-    #title {
-        font-size: 3rem;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-	.grid figure{
-		min-width: 20px;
-	}
-
-    #title {
-         font-size: 2rem;
-    }
-
-    #projectsGrid {
-        display:inline-block;
-        max-width: 100%;
-        overflow: none;
-    }
-
-    #etcGrid {
-        display:inline-block;
-        width: 100%;
-        overflow: visible;
-    }
-
-    #leftSide {
-        max-width: 100%;
-        max-height: 100%;
-        display: inline-block;
-        overflow: visible;
-    }
-
-    #talksGrid {
-        min-width: 100%;
-        min-height: 100%;
-        display: inline-block;
-        overflow: visible;
-        float: none;
-    }
 }
 
 .grid figure img {
@@ -257,16 +165,6 @@ main {
 	font-size: medium;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-}
-
-@media only screen and (max-width: 479px) {
-	.grid figure figcaption {
-		padding: 10px;
-	}
-
-    .flex__container {
-        min-width: 100%;
-    }
 }
 
 #cardButton {
@@ -318,37 +216,6 @@ figure.overlay img {
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
 	color: black;
-}
-
-@media (max-width: 479px) {
-    .resizeimg {
-        height: 100px;
-        width: auto;
-  }
-
-    figure.overlay p.description {
-        font-size: 6px;
-    }
-
-    .etc_img {
-        margin-top: 30%;
-        right: 15%;
-        max-height: 50%;
-        max-width: 50%;
-    }
-}
-
-@media (max-width: 990px) {
-    .resizeimg {
-        height: auto;
-    }
-}
-
-@media (min-width: 1000px) {
-    .resizeimg {
-        width: auto;
-        height: 350px;
-    }
 }
 
 figure.overlay:hover img {
@@ -406,16 +273,6 @@ figure.overlay figcaption::after {
 	transition: opacity 0.35s, transform 0.35s;
 }
 
-@media only screen and (max-width: 900px) {
-	figure.overlay figcaption::before,
-figure.overlay figcaption::after {
-		top: 3px;
-	right: 3px;
-	bottom: 3px;
-	left: 3px;
-	}
-}
-
 figure.overlay figcaption::before {
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #000;
@@ -431,7 +288,7 @@ figure.overlay figcaption::after {
 }
 
 figure.overlay h2 {
-	padding-top: 10%;
+    padding-top: 10%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,-20px,0);
@@ -449,13 +306,6 @@ figure.overlay p.description {
 	transform: translate3d(0,20px,0);
 }
 
-@media only screen and (max-width: 900px) {
-	figure.overlay p.description {
-		padding: 0px;
-		font-size: 10px;
-	}
-}
-
 figure.overlay:hover figcaption::before,
 figure.overlay:hover figcaption::after {
 	opacity: 1;
@@ -471,6 +321,7 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 	transform: translate3d(0,0,0);
 }
 
+/* ETC.Me */
 #etcGrid {
     display: none;
     background: green;
@@ -558,13 +409,6 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     text-transform: uppercase;
 }
 
-@media only screen and (max-width: 900px) {
-	.text--sub {
-		font-size: 7px;
-		letter-spacing: 0rem;
-	}
-}
-
 .text--big {
     font-family: 'Poppins', sans-serif;
     font-size: 5em;
@@ -574,25 +418,11 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     margin-left: -8px;
 }
 
-@media only screen and (max-width: 900px) {
-	.text--big {
-	    font-size: 1.5em;
-	    line-height: 20px;
-	    margin-left: -8px;
-	}
-}
-
 .text--normal {
     font-size: 13px;
     color: rgba(255, 255, 255, 0.8);
     line-height: 22px;
     margin-top: 25px;
-}
-
-@media only screen and (max-width: 900px) {
-	.text--normal {
-	    font-size: 10px;
-	}
 }
 
 .text__background {
@@ -603,12 +433,6 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     color: rgba(0, 0, 0, 0.05);
     font-size: 70px;
     font-weight: 700;
-}
-
-@media only screen and (max-width: 900px) {
-	.text__background {
-	    font-size: 50px;
-	}
 }
 
 .flex__item {
@@ -648,7 +472,6 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 }
 
 /* Blue */
-
 .flex--blue .flex__item--left {
     background: #3e9fe6;
 }
@@ -658,7 +481,6 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 }
 
 /* Yellow */
-
 .flex--yellow .flex__item--left {
     background: #f8d41f;
 }
@@ -668,7 +490,6 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 }
 
 /* Red */
-
 .flex--red .flex__item--left {
     background: #f64f37;
 }
@@ -678,7 +499,6 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 }
 
 /* Green */
-
 .flex--green .flex__item--left {
     background: #75890F;
 }
@@ -688,7 +508,6 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 }
 
 /* Gray */
-
 .flex--gray .flex__item--left {
     background: #424242;
 }
@@ -696,7 +515,6 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 .flex--gray .flex__item--right {
     background: #a7bcbb;
 }
-
 
 /* Purple */
 .flex--purple .flex__item--left {
@@ -717,7 +535,6 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 }
 
 /* Pink */
-
 .flex--pink .flex__item--left {
     background: #E99B85;
 }
@@ -776,34 +593,7 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     opacity: 0;
 }
 
-
-@media only screen and (max-width: 479px) {
-   #nav{
-        width: 905px;
-        position: relative;
-        float: right;
-        margin-left: 500px;
-   }
-
-   #nav ul {
-        list-style: none;
-        padding: 10px 0px 0px 1px;
-        margin: 0;
-   }
-
-   #nav ul li {
-        list-style: none;
-        float: left;
-        padding: 0 0 0 20px;
-        font-weight: normal;
-  }
-
-  .navtext a {
-        font-size:2.2em;
-        padding: 1px 5px 1px 5px;
-  }
-}
-
+/* Talks Section */
 
 #talksGrid {
     background: #1A0061;
@@ -834,9 +624,6 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     font-size: 1.2em;
 }
 
-#socialLinks {
-}
-
 #socialLinks a {
     margin: 6vh;
 }
@@ -845,4 +632,188 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     margin-top: 20vh;
 }
 
+@media only screen and (max-width: 1400px) {
+    #title {
+        font-size: 3rem;
+    }
+}
 
+@media (min-width: 1000px) {
+    .resizeimg {
+        width: auto;
+        height: 350px;
+    }
+}
+
+@media (max-width: 990px) {
+    .resizeimg {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .grid figure{
+        min-width: 20px;
+    }
+
+    #title {
+         font-size: 2rem;
+    }
+
+    #projectsGrid {
+        display:inline-block;
+        max-width: 100%;
+        overflow: none;
+    }
+
+    #etcGrid {
+        display:inline-block;
+        width: 100%;
+        overflow: visible;
+    }
+
+    #leftSide {
+        max-width: 100%;
+        max-height: 100%;
+        display: inline-block;
+        overflow: visible;
+    }
+
+    #talksGrid {
+        min-width: 100%;
+        min-height: 100%;
+        display: inline-block;
+        overflow: visible;
+        float: none;
+    }
+
+    figure.overlay figcaption::before,
+    figure.overlay figcaption::after {
+        top: 3px;
+        right: 3px;
+        bottom: 3px;
+        left: 3px;
+    }
+
+    figure.overlay p.description {
+        padding: 0px;
+        font-size: 10px;
+    }
+
+    .text--normal {
+        font-size: 10px;
+    }
+
+    .text__background {
+        font-size: 50px;
+    }
+
+    .text--big {
+        font-size: 1.5em;
+        line-height: 20px;
+        margin-left: -8px;
+    }
+
+    .text--sub {
+        font-size: 7px;
+        letter-spacing: 0rem;
+    }
+}
+
+@media (max-width: 479px) {
+    .resizeimg {
+        height: 100px;
+        width: auto;
+    }
+
+    figure.overlay p.description {
+        font-size: 6px;
+    }
+
+    .etc_img {
+        margin-top: 30%;
+        right: 15%;
+        max-height: 50%;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #nav {
+        width: 905px;
+        position: relative;
+        float: right;
+        margin-left: 500px;
+    }
+
+    #nav ul {
+        list-style: none;
+        padding: 10px 0px 0px 1px;
+        margin: 0;
+    }
+
+    #nav ul li {
+        list-style: none;
+        float: left;
+        padding: 0 0 0 20px;
+        font-weight: normal;
+    }
+
+    .navtext a {
+        font-size:2.2em;
+        padding: 1px 5px 1px 5px;
+    }
+
+    .grid {
+        display: inline;
+    }
+
+    #projectsGrid {
+        display:inline-block;
+        float: none;
+        max-width: 100%;
+        overflow: visible;
+    }
+
+    #etcGrid {
+        display: inline-block;
+        min-width: 100%;
+        overflow: visible;
+        float: none;
+    }
+
+    #leftSide {
+        max-width: 100%;
+        max-height: 100%;
+        display: inline-block;
+        overflow: visible;
+    }
+
+    #talksGrid {
+        min-width: 100%;
+        min-height: 100%;
+        display: inline-block;
+        overflow: visible;
+    }
+
+    #etcTitle {
+        left: 0vh;
+        margin-bottom: 2vh;
+    }
+
+    .flex__content {
+        padding: 10%;
+    }
+
+    .slider__navi {
+        top: 170%;
+    }
+
+    .grid figure figcaption {
+        padding: 10px;
+    }
+
+    .flex__container {
+        min-width: 100%;
+    }
+}
