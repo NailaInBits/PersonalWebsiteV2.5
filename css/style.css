@@ -629,7 +629,7 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 }
 
 #footer {
-    margin-top: 20vh;
+    margin-top: 13vh;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -638,16 +638,24 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     }
 }
 
-@media (min-width: 1000px) {
+@media only screen and (min-width: 1000px) {
     .resizeimg {
         width: auto;
         height: 350px;
     }
 }
 
-@media (max-width: 990px) {
+@media only screen and (max-width: 990px) {
     .resizeimg {
         height: auto;
+    }
+
+    #footer {
+        margin-top: 5vh;
+    }
+
+    #aboutSection {
+    	margin-top: 2vh;
     }
 }
 
@@ -660,10 +668,16 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
          font-size: 2rem;
     }
 
+    #topLinks {
+        display: none;
+    }
+
     #projectsGrid {
         display:inline-block;
         max-width: 100%;
-        overflow: none;
+        height: 100%;
+        overflow: visible;
+        background: #F1DBFF;
     }
 
     #etcGrid {
@@ -685,6 +699,14 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
         display: inline-block;
         overflow: visible;
         float: none;
+    }
+
+    .flex__container {
+        min-width: 100%;
+    }
+
+    .slider__navi {
+        top: 250%;
     }
 
     figure.overlay figcaption::before,
@@ -718,23 +740,13 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
         font-size: 7px;
         letter-spacing: 0rem;
     }
-}
 
-@media (max-width: 479px) {
-    .resizeimg {
-        height: 100px;
-        width: auto;
+    #footer {
+        margin-top: 8vh;
     }
 
-    figure.overlay p.description {
-        font-size: 6px;
-    }
-
-    .etc_img {
-        margin-top: 30%;
-        right: 15%;
-        max-height: 50%;
-        max-width: 50%;
+    #socialLinks a {
+        margin: 3.5vh;
     }
 }
 
@@ -750,6 +762,18 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
         list-style: none;
         padding: 10px 0px 0px 1px;
         margin: 0;
+    }
+
+    #toplinks {
+        display: none;
+    }
+
+    #footer {
+        margin-top: 8vh;
+    }
+
+    #socialLinks a {
+        margin: 3.5vh;
     }
 
     #nav ul li {
@@ -806,7 +830,7 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     }
 
     .slider__navi {
-        top: 170%;
+        top: 210%;
     }
 
     .grid figure figcaption {
@@ -815,5 +839,21 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 
     .flex__container {
         min-width: 100%;
+    }
+
+    .resizeimg {
+        height: 100px;
+        width: auto;
+    }
+
+    figure.overlay p.description {
+        font-size: 6px;
+    }
+
+    .etc_img {
+        margin-top: 30%;
+        right: 15%;
+        max-height: 50%;
+        max-width: 50%;
     }
 }
