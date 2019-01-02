@@ -114,7 +114,7 @@ main {
 #projectsGrid {
     background: #F1DBFF;
     max-width: 50%;
-    height: 100vh;
+    min-height: 100vh;
     float: right;
 }
 
@@ -597,7 +597,7 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 #talksGrid {
     background: #1A0061;
     width: 50%;
-    height: 100vh;
+    min-height: 100vh;
     float: right;
     display: none;
     margin-bottom: 0;
@@ -825,7 +825,6 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     }
 
     .flex__content {
-        padding: 10%;
     }
 
     .slider__navi {
