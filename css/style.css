@@ -543,6 +543,7 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 
 .flex__content {
     margin-left: 5%;
+    margin-top: 15vh;
     width: 55%;
     opacity: 1;
     transform: translate3d(0, 0, 0);
