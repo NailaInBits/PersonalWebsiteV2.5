@@ -1,6 +1,15 @@
+@font-face {
+font-family: "Stanley";
+src: url("fonts/stanley-webfont.eot");
+src:
+url("fonts/stanley-webfont.woff") format("woff"),
+url("fonts/Stanley.otf") format("opentype"),
+url("fonts/stanley-webfont.svg#filename") format("svg");
+}
+
 body {
     display: flex;
-    background-color:black;
+    background-color:#1D4028;
  }
 
 main {
@@ -9,9 +18,120 @@ main {
     height: 100%;
 }
 
+a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: black;
+ }
+
+.window-box {
+  position: relative;
+  display: block;
+  border: 2px solid #000000;
+  width: 100%;
+}
+
+.window-box .window-header {
+  position: relative;
+  padding-left: 10px;
+  border-bottom: 2px solid #000000;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    position: relative;
+    display: inline-block;
+    margin-right: 6px;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+ .container-timeline {
+   width: 80%;
+   padding: 20px 0;
+   margin: auto;
+   position: relative;
+   overflow: hidden;
+}
+
+.container-timeline:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 1.5%;
+   margin-left: -1px;
+   width: 2px;
+   height: 100%;
+   background: black;
+   z-index: 1
+}
+
+.timeline-block {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: flex;
+   -webkit-box-pack: justify;
+   -webkit-justify-content: space-between;
+   -moz-box-pack: justify;
+   justify-content: space-between;
+   clear: both;
+}
+
+.marker {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   border: 2px solid black;
+   background: black;
+   margin-top: 10px;
+   z-index: 9999
+}
+
+.timeline-content {
+   width: 95%;
+   padding: 0 15px;
+     padding-bottom: 20px;
+   color: #666
+}
+
+.timeline-content h3 {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 25px;
+   font-weight: 500
+}
+
+.timeline-content span {
+   font-size: 15px;
+   color: #a4a4a4;
+}
+
+
+@media screen and (max-width: 768px) {
+   .container:before {
+      left: 8px;
+      width: 2px;
+   }
+   .timeline-block {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+   .timeline-block-right {
+      float: none;
+   }
+
+   .timeline-block-left {
+      float: none;
+      direction: ltr;
+   }
+}
+
 /* Left Side of screen */
 #leftSide {
-    background: black;
+    background: #1D4028;
     max-width: 50%;
     height: 100vh;
     float: left;
@@ -23,7 +143,7 @@ main {
     display: inline-block;
     margin-left: 5vh;
     text-decoration:none;
-    color: #3500D4;
+    color: #F4EDE1;
 }
 #topLinks h2 {
     position: relative;
@@ -63,12 +183,16 @@ main {
 }
 
 #title {
-    font-family: 'Bungee Shade', cursive;
+    font-family: 'Stanley';
     text-align: center;
     font-weight: normal;
-    font-size: 3.5rem;
+    font-size: 5.5rem;
+    line-height: .8;
     color: #F5ECCF;
-    text-shadow: 0px 0px #EB4A2C, -1px 1px #EB4A2C, -2px 2px #EB4A2C, -3px 3px #EB4A2C, -4px 4px #EB4A2C, -5px 5px #EB4A2C, -6px 6px #EB4A2C, -7px 7px #EB4A2C, -8px 8px #EB4A2C, -9px 9px #EB4A2C, -10px 10px #EB4A2C, -11px 11px #EB4A2C, -12px 12px #EB4A2C, -13px 13px #EB4A2C, -14px 14px #EB4A2C, -15px 15px #EB4A2C, -16px 16px #EB4A2C, -17px 17px #EB4A2C, -18px 18px #EB4A2C, -19px 19px #EB4A2C, -20px 20px #EB4A2C, -21px 21px #EB4A2C, -22px 22px #EB4A2C, -23px 23px #EB4A2C, -24px 24px #EB4A2C, -25px 25px #EB4A2C, -26px 26px #EB4A2C, -27px 27px #EB4A2C, -28px 28px #EB4A2C, -29px 29px #EB4A2C, -30px 30px #EB4A2C, -31px 31px #EB4A2C, -32px 32px #EB4A2C, -33px 33px #EB4A2C, -34px 34px #EB4A2C, -35px 35px #EB4A2C, -36px 36px #EB4A2C, -37px 37px #EB4A2C, -38px 38px #EB4A2C, -39px 39px #EB4A2C, -40px 40px #EB4A2C, -41px 41px #EB4A2C, -42px 42px #EB4A2C, -43px 43px #EB4A2C, -44px 44px #EB4A2C, -45px 45px #EB4A2C, -46px 46px #EB4A2C, -47px 47px #EB4A2C, -48px 48px #EB4A2C, -49px 49px #EB4A2C, -50px 50px #EB4A2C;
+}
+
+#row2 {
+    margin-bottom: 0px;
 }
 
 #aboutSection {
@@ -107,7 +231,7 @@ main {
 	font-family: 'Inconsolata', monospace;
 	font-size: large;
 	text-align: center;
-	color: #230090;
+	color: #F4EDE1;
 }
 
 /* Right side of screen that remains hidden unless button is clicked */
@@ -116,12 +240,12 @@ main {
     max-width: 50%;
     min-height: 100vh;
     float: right;
+    display: none;
 }
 
 .titles {
-    font-family: 'Bungee Inline', cursive;
-    text-decoration: underline;
-    color: #4286F5;
+    font-family: 'Stanley';
+    color: #FBD533;
     margin-bottom: 0;
 }
 
@@ -319,6 +443,23 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 	transform: translate3d(0,0,0);
 }
 
+#underConstruction {
+    font-size: 15rem;
+    text-align: center;
+    color: #fcedd8;
+    font-family: 'Niconne', cursive;
+    font-weight: 700;
+    text-shadow: 5px 5px 0px #eb452b, 
+                10px 10px 0px #efa032, 
+                  15px 15px 0px #46b59b, 
+                  20px 20px 0px #017e7f, 
+                  25px 25px 0px #052939, 
+                  30px 30px 0px #c11a2b, 
+                  35px 35px 0px #c11a2b, 
+                  40px 40px 0px #c11a2b, 
+                  45px 45px 0px #c11a2b;
+}
+
 /* ETC.Me */
 #etcGrid {
     display: none;
@@ -331,10 +472,9 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 }
 
 #etcTitle {
-    font-family: 'Bungee Inline', cursive;
-    text-decoration: underline;
+    font-family: "Stanley";
     position: absolute;
-    right: 20vh;
+    right: 40vh;
     margin-bottom: 2vh;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -595,11 +735,10 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 /* Talks Section */
 
 #talksGrid {
-    background: #1A0061;
+    background: #D0AE8B;
     width: 50%;
     min-height: 100vh;
     float: right;
-    display: none;
     margin-bottom: 0;
 }
 
@@ -628,7 +767,7 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
 }
 
 #footer {
-    margin-top: 13vh;
+    margin-top: 10vh;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -664,7 +803,7 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     }
 
     #title {
-         font-size: 2rem;
+        font-size: 3rem;
     }
 
     #topLinks {
@@ -705,7 +844,7 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     }
 
     .slider__navi {
-        top: 250%;
+        top: 450%;
     }
 
     figure.overlay figcaption::before,

@@ -804,11 +804,11 @@
 }
 
 .light-blue.darken-1 {
-  background-color: #039be5 !important;
+  background-color: #039be5;
 }
 
 .light-blue-text.text-darken-1 {
-  color: #039be5 !important;
+  color: #039be5;
 }
 
 .light-blue.darken-2 {
@@ -2302,6 +2302,7 @@ template {
  */
 a {
   background-color: transparent;
+  color: inherit;
 }
 
 /**
@@ -2635,7 +2636,7 @@ ul li {
 }
 
 a {
-  color: #039be5;
+  color: inherit;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
