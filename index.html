@@ -31,7 +31,7 @@
 	<body>
 		<main>
 			<div id="leftSide">
-				<div class="row 1">
+				<div class="row 1" id="row2">
 					<div class="col s12" id="topLinks">
 						<div class="col s3" onclick="toggleVisibility('talksGrid');"> <a> <h2>Talks</h2> </a> </div>
 						<div class="col s3" onclick="toggleVisibility('projectsGrid');"> <a> <h2>Projects</h2> </a> </div>
@@ -46,7 +46,7 @@
 					</div>
 				</div>
 
-				<div class="row 3">
+				<div class="row 3" id="row2">
 					<div class="col s12" id="aboutSection">
 						<div class="col s2">
 						</div>
@@ -80,8 +80,10 @@
 					</div>
 				</div>
 
-				<div id="footer">
-					<div class="col s12" id="socialLinks">
+				<div id="footer" id="row2">
+					<div class="col s1">
+					</div>
+					<div class="col s11" id="socialLinks">
 						<a href="https://github.com/nailainbits" target="_blank"> <i class="fa fa-github-alt fa-2x" aria-hidden="true" style="color: #F4EDE1;"></i> </a>
 						<a href="https://www.linkedin.com/in/nishatanjum" target="_blank"> <i class="fa fa-linkedin fa-2x" aria-hidden="true" style="color: #F4EDE1;"></i> </a>
 						<a href="https://twitter.com/thathijabae" target="_blank"> <i class="fa fa-twitter fa-2x" aria-hidden="true" style="color: #F4EDE1;"></i> </a>
@@ -91,23 +93,24 @@
 			</div>
 
 			<div id="talksGrid">
-				<div class="row 4">
+				<div class="row 1">
 					<div class="col s12">
 						<div class="titles">
-							<a href="https://noti.st/nailainbits"> <h1 style="text-align: center; color: #FBD533;" > <i class="fa fa-play-circle-o" aria-hidden="true"></i>Talks</h1></a>
+							<a href="https://noti.st/nailainbits"> <h1 style="text-align: center; color: #FBD533;" > 
+							<i aria-hidden="true"></i>Talks</h1></a>
 						</div>  
 					</div>
 				</div>
 
-				<div class="row 5">
-				<div class="col s1">
-				</div>
+				<div class="row 2">
+					<div class="col s1">
+					</div>
 					<div class="col s10" id="talksBody">
 					<div class="window-box window-box">
-										<div class="window-header">
-											<div class="dot"></div><div class="dot"></div><div class="dot"></div>
-										</div>
-										<div class="window-body">
+						<div class="window-header">
+							<div class="dot"></div><div class="dot"></div><div class="dot"></div>
+						</div>
+						<div class="window-body">
 						<div class="container-timeline">
 						   <div class="timeline-block">
 						      	<div class="marker"></div>
@@ -118,234 +121,154 @@
 						   	</div>
 							
 							<div class="timeline-block">
-						      <div class="marker"></div>
-						      <div class="timeline-content">
-						         <h3 id="talksBody">Diasporas, Data, D3.JS, Oh My!</h3>
-						         <a href="https://2018.empirejs.org/" style="color: #FBD533;"><h6> EmpireJS 2018 </h6></a>
-						      </div>
-						   </div>
+						      	<div class="marker"></div>
+						      	<div class="timeline-content">
+						         	<h3 id="talksBody">Diasporas, Data, D3.JS, Oh My!</h3>
+						         	<a href="https://2018.empirejs.org/" style="color: #FBD533;"><h6> EmpireJS 2018 </h6></a>
+						      	</div>
+						   	</div>
 
-						   <div class="timeline-block">
-						      <div class="marker"></div>
-						      <div class="timeline-content">
-						        <h3 id="talksBody">Using Open Source to Solve an Identity Crisis</h3>
-								<a href="http://www.writespeakcode.com/2018/" style="color: #FBD533;"> <h7> Write/Speak/Code Conference 2018</h7></a>
-						      </div>
-						   </div>
+						   	<div class="timeline-block">
+						   	   	<div class="marker"></div>
+						      	<div class="timeline-content">
+						        	<h3 id="talksBody">Using Open Source to Solve an Identity Crisis</h3>
+									<a href="http://www.writespeakcode.com/2018/" style="color: #FBD533;"> <h7> Write/Speak/Code Conference 2018</h7></a>
+						      	</div>
+						   	</div>
 
-						   <div class="timeline-block">
-						      <div class="marker"></div>
-						      <div class="timeline-content">
-						         <h3 id="talksBody">Diasporas, D3, Data: Oh My!</h3>
+						   	<div class="timeline-block">
+						      	<div class="marker"></div>
+						      	<div class="timeline-content">
+						         	<h3 id="talksBody">Diasporas, D3, Data: Oh My!</h3>
 									<a href="https://iwd2018.splashthat.com/" style="color: #FBD533;"> <h6>Google Developer Group NYC IWD Conference</h6> </a>
-						      </div>
-						   </div>
+						     	</div>
+						   	</div>
 
-						   <div class="timeline-block">
-						      <div class="marker"></div>
-						      <div class="timeline-content">
-								<h3 id="talksBody">Unicorns Are Actually Terrifying: Diversity for Diversity's Sake</h3>
-								<a href="https://www.alterconf.com/conferences/2017/san-francisco-ca" style="color: #FBD533;"> <h6> AlterConf 2017 San Francisco </h6></a>
-						      </div>
-						   </div>
+						   	<div class="timeline-block">
+						    	<div class="marker"></div>
+						      	<div class="timeline-content">
+									<h3 id="talksBody">Unicorns Are Actually Terrifying: Diversity for Diversity's Sake</h3>
+									<a href="https://www.alterconf.com/conferences/2017/san-francisco-ca" style="color: #FBD533;"> <h6> AlterConf 2017 San Francisco </h6></a>
+						      	</div>
+						   	</div>
 						</div>	
 						</div>
-									</div>
 					</div>
-
-					<!-- <div class="col s4">
-						<div class="row 1">
-							<img src="images/GDGIWD2.png" class="responsive-img" id="talkpics">
-						</div>
-						<div class="row 2">
-							<img src="images/AlterConf12.jpg" class="responsive-img" id="talkpics">
-						</div>
-						<div class="row 3">
-							<img src="images/GDGIWD5.jpg" class="responsive-img" id="talkpics" style=" margin-left: 5%; height: 30%; width: 40%;">
-						<img src="images/WSC1.jpg" class="responsive-img" id="talkpics" style=" margin-left: 5%; height: 30%; width: 40%;">
-						</div>
-					</div> -->
-
-				<!-- <div class="row 8">
-					<div class="col s6">
-						<div class="subtitles" style="text-align: left; margin-top: -20%; margin-bottom: -5%;">
-							<h3>Upcoming:</h3>
-						</div>
-					</div>
-				</div> 
-
-				<div class="row 5" style="margin-bottom: -5%;">
-					<div class="col s6" id="talksBody" style="text-align: left; margin-left: 5%;">
-						<h6 id="talkTitle">Mansplaining to the Pope</h6>
-						<a href="https://hackcon.mlh.io/events/north-america/" style="color: #FBD533;"><h6> MLH Hackcon VI North America</h6></a> 
-						<p></p>
-
-						<h6 id="talkTitle">DIASPORAS, DATA, D3.JS, OH MY!</h6>
-						<a href="https://2018.empirejs.org/" style="color: #FBD533;"><h6> EmpireJS 2018 </h6></a>
-						<p></p>
-					</div>
-					<div class="col s5">
-						<img src="images/GDGIWD2.png" class="responsive-img" id="talkpics" align="right">
 					</div>
 				</div>
-
-				<div class="row 6" style="margin-top: -20%;">
-					<div class="col s12">
-						<!-- <div class="subtitles" style="margin-bottom: -10%;">
-								<h3>Past:</h3>
-							</div> 
-					</div>
-				</div> 
-
-				<div class="row 7">
-					<div class="col s5">
-						<img src="images/AlterConf12.jpg" class="responsive-img" id="talkpics">
-					</div>
-					<div class="col s6" id="talksBody" style="text-align: right;">
-						<h6 id="talkTitle">Using Open Source to Solve an Identity Crisis</h6>
-						<a href="http://www.writespeakcode.com/2018/" style="color: #FBD533;"> <h7> Write/Speak/Code Conference 2018</h7></a>
-						<p></p>
-
-						<h6 id="talkTitle">Diasporas, D3, Data: Oh My!</h6>
-						<a href="https://iwd2018.splashthat.com/" style="color: #FBD533;"> <h6>Google Developer Group NYC IWD Conference</h6> </a>
-						<p></p>
-
-						<h6 id="talkTitle">Unicorns Are Actually Terrifying: Diversity for Diversity's Sake</h6>
-						<a href="https://www.alterconf.com/conferences/2017/san-francisco-ca" style="color: #FBD533;"> <h6> AlterConf 2017 San Francisco </h6></a>
-						<p></p>
-					</div>
-				</div>
-
-				<div class="row 8">
-					<div class="col s12">
-						<img src="images/GDGIWD5.jpg" class="responsive-img" id="talkpics" style=" margin-left: 5%; height: 30%; width: 40%;">
-						<img src="images/WSC1.jpg" class="responsive-img" id="talkpics" style=" margin-left: 5%; height: 30%; width: 40%;">
-					</div>
-				</div>-->
-				</div>
-				
 			</div>
 
-			
 			<div id="projectsGrid">
-				<div class="row 9">
+				<div class="row 1">
 					<div class="col s12">
 						<div class="titles" style="color:#1D4027;">
-							<h1 style="text-align: center;" > <i class="fa fa-code-fork" aria-hidden="true"></i>Projects</h1>
+							<h1 style="text-align: center;" > <i aria-hidden="true"></i>Projects</h1>
 						</div>
 					</div>
 				</div>
 
-				<div class="row 10">
+				<div class="row 2">
 					<div class="projectContent">
-					<div class="col s6 m4 l4 grid">
-						<div class="card">
-							<figure class="overlay">
-								<div class="card-image">
-									<img class="responsive-img" src="images/dayday.png">
-								</div>
-								<figcaption>
-									<p class="description">Day Day is an interactive mobile app which allows Korean pop culture fans to chat, purchase merchandise, and attend local meetups. <br> <br>
-										<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/NailaInBits/DayDay">Git repo</a>
-									</p>
-								</figcaption>
-							</figure>
+						<div class="col s6 m4 l4 grid">
+							<div class="card">
+								<figure class="overlay">
+									<div class="card-image">
+										<img class="responsive-img" src="images/dayday.png">
+									</div>
+									<figcaption>
+										<p class="description">Day Day is an interactive mobile app which allows Korean pop culture fans to chat, purchase merchandise, and attend local meetups. <br> <br>
+											<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/NailaInBits/DayDay">Git repo</a>
+										</p>
+									</figcaption>
+								</figure>
+							</div>
 						</div>
-					</div>
-
-					<div class="col s6 m4 l4 grid">
-						<div class="card">
-							<figure class="overlay">
-								<div class="card-image">
-									<img class="responsive-img" src="images/weplay.png">
-								</div>
-								<figcaption>
-									<p class="description">WePlay is a location based app dedicated to nurturing human connections in the digital age. <br> <br>
-
-										<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/NailaInBits/WePlay">Git Repo</a> <br> <br>
-
-										<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://nailainbits.github.io/WePlayWebsite/">Website</a>
-									</p>
-								</figcaption>
-							</figure>
+						<div class="col s6 m4 l4 grid">
+							<div class="card">
+								<figure class="overlay">
+									<div class="card-image">
+										<img class="responsive-img" src="images/weplay.png">
+									</div>
+									<figcaption>
+										<p class="description">WePlay is a location based app dedicated to nurturing human connections in the digital age. <br> <br>
+											<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/NailaInBits/WePlay">Git Repo</a> <br> <br>
+											<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://nailainbits.github.io/WePlayWebsite/">Website</a>
+										</p>
+									</figcaption>
+								</figure>
+							</div>
 						</div>
-					</div>
-
-					<div class="col s6 m4 l4 grid">
-						<div class="card">
-							<figure class="overlay">
-								<div class="card-image">
-									<img class="responsive-img" src="images/locus.png">
-								</div>
-								<figcaption>
-									<p class="description">Locus is an iOS app that will allow users to chronologize places they've travelled to. <br> <br>
-
-										<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/cunytech/locus">Git Repo</a></p>
-								</figcaption>
-							</figure>
+						<div class="col s6 m4 l4 grid">
+							<div class="card">
+								<figure class="overlay">
+									<div class="card-image">
+										<img class="responsive-img" src="images/locus.png">
+									</div>
+									<figcaption>
+										<p class="description">Locus is an iOS app that will allow users to chronologize places they've travelled to. <br> <br>
+											<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/cunytech/locus">Git Repo</a>
+										</p>
+									</figcaption>
+								</figure>
+							</div>
 						</div>
-					</div>
-
-					<div class="col s6 m4 l4 grid">
-						<div class="card">
-							<figure class="overlay">
-								<div class="card-image">
-									<img class="responsive-img" src="images/cunybuzz.png">
-								</div>
-								<figcaption>
-									<p class="description">CUNY Buzz is a Facebook messenger bot that allows you to search for registered Brooklyn College events.  <br> <br>
-
-										<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/nishata/CUNYBuzzBot">Git Repo</a> <br> <br>
-										<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://bot.api.ai/a30eae9f-eee3-4c51-8d5d-8e8b6e5bea78">Try It!</a>
-									</p>
-								</figcaption>
-							</figure>
+						<div class="col s6 m4 l4 grid">
+							<div class="card">
+								<figure class="overlay">
+									<div class="card-image">
+										<img class="responsive-img" src="images/cunybuzz.png">
+									</div>
+									<figcaption>
+										<p class="description">CUNY Buzz is a Facebook messenger bot that allows you to search for registered Brooklyn College events.  <br> <br>
+											<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/nishata/CUNYBuzzBot">Git Repo</a> <br> <br>
+											<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://bot.api.ai/a30eae9f-eee3-4c51-8d5d-8e8b6e5bea78">Try It!</a>
+										</p>
+									</figcaption>
+								</figure>
+							</div>
 						</div>
-					</div>
-
-					<div class="col s6 m4 l4 grid">
-						<div class="card">
-							<figure class="overlay">
-								<div class="card-image">
-									<img class="responsive-img" src="images/techevents.png">
-								</div>
-								<figcaption>
-									<p class="description">Tech Events is an Alexa skill that allows you to search through meetup.com and find tech related events in your area. <br> <br>
-
-										<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/nishata/TechEventAlexaSkill">Git Repo</a></p>
-								</figcaption>
-							</figure>
+						<div class="col s6 m4 l4 grid">
+							<div class="card">
+								<figure class="overlay">
+									<div class="card-image">
+										<img class="responsive-img" src="images/techevents.png">
+									</div>
+									<figcaption>
+										<p class="description">Tech Events is an Alexa skill that allows you to search through meetup.com and find tech related events in your area. <br> <br>
+											<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://github.com/nishata/TechEventAlexaSkill">Git Repo</a>
+										</p>
+									</figcaption>
+								</figure>
+							</div>
 						</div>
-					</div>
-
-					<div class="col s6 m4 l4 grid">
-						<div class="card">
-							<figure class="overlay">
-								<div class="card-image">
-									<img class="responsive-img" src="images/femfeed.png">
-								</div>
-								<figcaption>
-									<p class="description">An all female platform for programmers that provides actionable, specific, and kind code feedback as well as the option to connect female programmers with others in their area.
-										<br> <br>
-										<a class="waves-effect waves-light btn deep-purple lighten-4" href="http://fem-feed.com/">Website</a></p>
-								</figcaption>
-							</figure>
+						<div class="col s6 m4 l4 grid">
+							<div class="card">
+								<figure class="overlay">
+									<div class="card-image">
+										<img class="responsive-img" src="images/femfeed.png">
+									</div>
+									<figcaption>
+										<p class="description">An all female platform for programmers that provides actionable, specific, and kind code feedback as well as the option to connect female programmers with others in their area.
+											<br> <br>
+											<a class="waves-effect waves-light btn deep-purple lighten-4" href="http://fem-feed.com/">Website</a>
+										</p>
+									</figcaption>
+								</figure>
+							</div>
 						</div>
-					</div>
 					</div>
 				</div>
 			</div>
 
 			<div id="etcGrid">
 			<!-- Row 11 utilizes pieces of code from Pham Mikun (@mikun) -->
-			<div class = "row 11" >
+			<div class = "row 1" >
 				<div class="col s6">
 					<div class="slider__warpper">
 						<div id="etcTitle">
-							<h1 style="text-align: center;" > <i class="fa fa-bolt" aria-hidden="true"></i>Etc.</h1>
+							<h1 style="text-align: center;" > <i aria-hidden="true"></i>Etc.</h1>
 						</div>
-
-						<div class="flex__container flex--red flex--active" data-slide="1">
+						<div class="flex__container flex--green flex--active" data-slide="1">
 							<div class="flex__item flex__item--left">
 								<div class="flex__content">
 									<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://open.spotify.com/episode/0H6Vp0nYUnWIqZVsEQ9jWh?si=M3N69ALFTPmRmUjCoFeE0g">Listen on Spotify </a>
@@ -358,7 +281,6 @@
 							<div class="flex__item flex__item--right"></div>
 							<img class="etc_img" class="responsive-img" src="images/BACPodcast.jpg" />
 						</div>
-
 						<div class="flex__container flex--periwinkle animate--start" data-slide="2">
 							<div class="flex__item flex__item--left">
 								<div class="flex__content">
@@ -372,7 +294,6 @@
 							<div class="flex__item flex__item--right"></div>
 							<img class="etc_img" class="responsive-img" src="images/hackcon3.jpg" />
 						</div>
-
 						<div class="flex__container flex--blue animate--start" data-slide="3">
 							<div class="flex__item flex__item--left">
 								<div class="flex__content">
@@ -384,7 +305,6 @@
 							<div class="flex__item flex__item--right"></div>
 							<img class="etc_img" class="responsive-img" src="images/backpacking.jpg" />
 						</div>
-
 						<div class="flex__container flex--green animate--start" data-slide="4">
 							<div class="flex__item flex__item--left">
 								<div class="flex__content">
@@ -398,7 +318,6 @@
 							<div class="flex__item flex__item--right"></div>
 							<img class="etc_img" class="responsive-img" src="images/twitter.jpg" />
 						</div>
-
 						<div class="flex__container flex--gray animate--start" data-slide="5">
 							<div class="flex__item flex__item--left">
 								<div class="flex__content">
@@ -414,8 +333,7 @@
 									src="https://www.youtube.com/embed/8A0U96kTRPM" frameborder="0" allowfullscreen>
 							</iframe>
 						</div>
-
-						<div class="flex__container flex--yellow animate--start" data-slide="6">
+						<div class="flex__container flex--green animate--start" data-slide="6">
 							<div class="flex__item flex__item--left">
 								<div class="flex__content">
 									<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://twitter.com/i/moments/805565422607204352">Twitter Moment</a>
@@ -428,7 +346,6 @@
 							<div class="flex__item flex__item--right"></div>
 							<img class="etc_img" class="responsive-img" src="images/BWBT.png" />
 						</div>
-
 						<div class="flex__container flex--blue animate--start" data-slide="7">
 							<div class="flex__item flex__item--left">
 								<div class="flex__content">
@@ -442,8 +359,7 @@
 							<div class="flex__item flex__item--right"></div>
 							<img class="etc_img" class="responsive-img" src="images/imagineCup.png" />
 						</div>
-
-						<div class="flex__container flex--green animate--start" data-slide="8">
+						<div class="flex__container flex--gray animate--start" data-slide="8">
 							<div class="flex__item flex__item--left">
 								<div class="flex__content">
 									<a class="waves-effect waves-light btn deep-purple lighten-4" href="http://daydayapp.io/">Website</a>
@@ -456,7 +372,6 @@
 							<div class="flex__item flex__item--right"></div>
 							<img class="etc_img" class="responsive-img" src="images/cunyStartup.png" />
 						</div>
-
 						<div class="flex__container flex--periwinkle animate--start" data-slide="9">
 							<div class="flex__item flex__item--left">
 								<div class="flex__content">
@@ -469,8 +384,7 @@
 							<div class="flex__item flex__item--right"></div>
 							<img class="etc_img" class="responsive-img" src="images/clarifai.jpg" />
 						</div>
-
-						<div class="flex__container flex--pink animate--start" data-slide="10">
+						<div class="flex__container flex--green animate--start" data-slide="10">
 							<div class="flex__item flex__item--left">
 								<div class="flex__content">
 									<a class="waves-effect waves-light btn deep-purple lighten-4" href="https://technical.ly/baltimore/2016/11/07/technica-female-hackathon-projects/?utm_content=bufferede18&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer">Article Link</a>
@@ -484,7 +398,6 @@
 							<img class="etc_img" class="responsive-img" src="images/technica.jpg" />
 						</div>
 					</div>
-
 					<div class="slider__navi">
 						<a href="#" class="slide-nav active" data-slide="1">green</a>
 						<a href="#" class="slide-nav" data-slide="2">periwinkle</a>
