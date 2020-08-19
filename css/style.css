@@ -858,7 +858,7 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     }
 
     .slider__navi {
-        top: 450%;
+        top: 350%;
     }
 
     figure.overlay figcaption::before,
@@ -906,6 +906,12 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .slider__navi {
+        top: 420%;
+    }
+}
+
 @media only screen and (max-width: 479px) {
     #nav {
         width: 905px;
@@ -925,11 +931,11 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     }
 
     #footer {
-        margin-top: 8vh;
+        margin-top: 25vh;
     }
 
     #socialLinks a {
-        margin: 3.5vh;
+        margin: 4vh;
     }
 
     #nav ul li {
@@ -985,7 +991,7 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     }
 
     .slider__navi {
-        top: 210%;
+        top: 420%;
     }
 
     .grid figure figcaption {
