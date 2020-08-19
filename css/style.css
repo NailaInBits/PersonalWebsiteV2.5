@@ -551,6 +551,14 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     font-family: 'Poppins', sans-serif;
     font-size: 5em;
     font-weight: 700;
+    line-height: 100px;
+    margin-left: -8px;
+}
+
+.text--big-margin {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5em;
+    font-weight: 700;
     margin-top: 20vh;
     line-height: 100px;
     margin-left: -8px;
@@ -886,11 +894,15 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
     }
 
     #footer {
-        margin-top: 8vh;
+        margin-top: 10vh;
     }
 
     #socialLinks a {
-        margin: 3.5vh;
+        margin: 6vh;
+    }
+
+    #footerRight {
+        display: none;
     }
 }
 
@@ -998,5 +1010,9 @@ figure.overlay:hover p.description, figure.overlay:hover p.icon-links a {
         right: 15%;
         max-height: 50%;
         max-width: 50%;
+    }
+
+    #footerRight {
+        display: none;
     }
 }
